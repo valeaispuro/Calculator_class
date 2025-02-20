@@ -1,0 +1,16 @@
+{
+  "name": "tc3004b_101_qa",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "mocha": "^11.1.0",
+    "selenium-webdriver": "^4.28.1"
+  }
+}
