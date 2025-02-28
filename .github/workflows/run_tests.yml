@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-      -run: cd tests
+      - run: cd tests
       - run: npm install
       - run: npx mocha tests/*.js
        
