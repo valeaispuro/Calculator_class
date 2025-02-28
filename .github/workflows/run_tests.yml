@@ -2,11 +2,11 @@ name: Run tests
 
 on:
   workflow_dispatch:
-
+  
 jobs:
   test:
     name: Test
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     container:
       image: node:20
@@ -18,30 +18,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: 120
-          install-dependencies: true
-
-      # Start local server if needed
-      - run: |
-          python3 -m http.server 8000 &
-          sleep 10
-          curl http://localhost:8000 || echo "Server did not start"
-        if: always()
-
-      # Install dependencies
+          cache: 'npm'
+      - run: cd tests
       - run: npm install
-
-      # Run tests
-      - run: npx mocha tests/*.js
-
-      # Upload screenshots if tests fail
+      - run: ./node_modules/.bin/mocha *.js
+       
       - uses: actions/upload-artifact@v4
         if: always()
         with:
