@@ -24,7 +24,7 @@ jobs:
           cache: 'npm'
       - run: cd tests
       - run: npm install
-      - run: ./node_modules/.bin/mocha *.js
+      - run: ./node_modules/.bin/mocha tests/*.js
        
       - uses: actions/upload-artifact@v4
         if: always()
