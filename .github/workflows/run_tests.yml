@@ -17,25 +17,16 @@ jobs:
         options: --shm-size=2gb
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run tests
-        env:
-          SELENIUM_REMOTE_URL: http://selenium:4444/wd/hub
-        run: npx mocha tests/*.js
-
-      - name: Upload screenshots (if any)
-        uses: actions/upload-artifact@v4
+      - run: cd tests
+      - run: npm install
+      - run: ./node_modules/.bin/mocha *.js
+       
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: screenshots
