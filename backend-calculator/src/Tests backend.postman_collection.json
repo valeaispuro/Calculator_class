@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "84aa5270-3d47-474f-a625-c8a7363c0a28",
+		"name": "Tests backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43386195",
+		"_collection_link": "https://valeriaaispuro.postman.co/workspace/Valeria-Aispuro's-Workspace~3b682371-d322-4459-8bf9-50f746d59f17/collection/43386195-84aa5270-3d47-474f-a625-c8a7363c0a28?action=share&source=collection_link&creator=43386195"
+	},
+	"item": [
+		{
+			"name": "Test 1",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Test 2",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Test 3",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Test 4",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
