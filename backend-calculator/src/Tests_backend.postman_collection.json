@@ -11,7 +11,30 @@
 			"name": "Test 1",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/calculator/multiply?a=4&b=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calculator",
+						"multiply"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "4"
+						},
+						{
+							"key": "b",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -19,7 +42,30 @@
 			"name": "Test 2",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/calculator/add?a=1&b=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calculator",
+						"add"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "1"
+						},
+						{
+							"key": "b",
+							"value": "3"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -27,7 +73,30 @@
 			"name": "Test 3",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/calculator/subtract?a=10&b=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calculator",
+						"subtract"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "10"
+						},
+						{
+							"key": "b",
+							"value": "5"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -35,7 +104,30 @@
 			"name": "Test 4",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/calculator/divide?a=27&b=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calculator",
+						"divide"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "27"
+						},
+						{
+							"key": "b",
+							"value": "9"
+						}
+					]
+				}
 			},
 			"response": []
 		}
