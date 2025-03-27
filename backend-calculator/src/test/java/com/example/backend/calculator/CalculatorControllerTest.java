@@ -1,5 +1,4 @@
 //junit code
-
 package com.example.backend.calculator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
